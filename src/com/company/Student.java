@@ -21,14 +21,41 @@ public class Student {
       this.grade = grade;
     }
 
-    //not going to alter student's name, id
+    //not going to alter student's name, id, fees total
     // no need for setter
 
-    //we will alter: student's grade
+    //we will alter: student's grade, fees paid
 
 
     public void setGrade(int grade) {
         this.grade = grade;
+    }
+
+    public void updateFeesPaid( int fees ) {
+        feesPaid += fees;
+    }
+
+    //getters:
+
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getGrade() {
+        return grade;
+    }
+
+    public int getFeesPaid() {
+        return feesPaid;
+    }
+
+    public int getFeesTotal() {
+        return feesTotal;
     }
 }
 
